@@ -1,0 +1,362 @@
+{
+  "keyword": "claude image generation",
+  "title": "Claude Image Generation via MCP: 8 Connectors Compared by App and Plan",
+  "lastChecked": "2026-10-16",
+  "capabilityChecks": [
+    {
+      "key": "runsASavedWorkflowInOneRequest",
+      "label": "Runs a saved workflow in one request"
+    },
+    {
+      "key": "inAnthropicSDirectory",
+      "label": "In Anthropic's directory"
+    },
+    {
+      "key": "claudeWebAndDesktop",
+      "label": "Claude web and desktop"
+    },
+    {
+      "key": "claudeCode",
+      "label": "Claude Code"
+    },
+    {
+      "key": "accountSignInWithNoApiKey",
+      "label": "Account sign-in with no API key"
+    },
+    {
+      "key": "imageShownInChat",
+      "label": "Image shown in chat"
+    },
+    {
+      "key": "asksBeforeSpendingCredits",
+      "label": "Asks before spending credits"
+    },
+    {
+      "key": "generatesOnAFreeVendorAccount",
+      "label": "Generates on a free vendor account"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for running a whole image workflow from one request",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Custom connector by URL, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": "100+ image, video and audio models as nodes",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in. In Claude on the web, add the same URL as a custom connector.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "Or install the open source Claude Code skills, from the same README. Each skill shows the credit cost and waits for your yes before a run.",
+          "lang": "text",
+          "code": "/plugin marketplace add wireflowINC/skills\n/plugin install wireflow-skills@wireflow"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/node-based-image-generation",
+      "moneyPageLabel": "Wireflow node based image generation page",
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": true,
+        "inAnthropicSDirectory": false,
+        "claudeWebAndDesktop": true,
+        "claudeCode": true,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": null,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": false
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Comfy Cloud",
+      "tagline": "Best for ComfyUI workflows on cloud GPUs",
+      "homepage": "https://comfy.org/cloud/",
+      "docs": "https://docs.comfy.org/agent-tools/mcp",
+      "pricing": "https://comfy.org/pricing/",
+      "claudeConnection": "Custom connector by URL, OAuth, API key fallback",
+      "restApi": true,
+      "modelSupport": "ComfyUI workflows, plus partner models such as Flux and Ideogram",
+      "freeTier": "unverified",
+      "repo": "Comfy-Org/comfy-skills",
+      "note": "The linked repository holds Comfy's Claude Code plugins, including comfy-cloud. The hosted MCP connection itself is a service.",
+      "quickstart": [
+        {
+          "label": "Install the comfy-cloud plugin in Claude Code, from the Comfy MCP docs. Then run /mcp, select comfy-cloud and authenticate.",
+          "lang": "text",
+          "code": "/plugin marketplace add Comfy-Org/comfy-skills\n/plugin install comfy-cloud@comfy-skills"
+        },
+        {
+          "label": "Or add only the connection, from the same page.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http comfy-cloud https://cloud.comfy.org/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": true,
+        "inAnthropicSDirectory": false,
+        "claudeWebAndDesktop": true,
+        "claudeCode": true,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": null,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": false
+      },
+      "live": {
+        "stars": 231,
+        "lastPush": "2026-10-08T20:36:54Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-16"
+      }
+    },
+    {
+      "n": 3,
+      "name": "Krea",
+      "tagline": "Best for Claude Code users who want many image models",
+      "homepage": "https://www.krea.ai/",
+      "docs": "https://www.krea.ai/docs/developers/mcp",
+      "pricing": "https://www.krea.ai/pricing",
+      "claudeConnection": "Server URL, OAuth, API token fallback",
+      "restApi": true,
+      "modelSupport": "Krea's image and video models, and node apps",
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Free tier is marked yes because the pricing page lists a free plan.",
+      "quickstart": [
+        {
+          "label": "Add the Krea MCP server to Claude Code, from Krea's MCP docs. Sign in with your Krea account when Claude Code asks you to connect.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http krea-ai https://api.krea.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": true,
+        "inAnthropicSDirectory": false,
+        "claudeWebAndDesktop": null,
+        "claudeCode": true,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": true,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 4,
+      "name": "Figma",
+      "tagline": "Best for teams that already pay for Figma Weave",
+      "homepage": "https://www.figma.com/",
+      "docs": "https://developers.figma.com/docs/figma-mcp-server/",
+      "pricing": "https://www.figma.com/pricing",
+      "claudeConnection": "Directory connector, OAuth sign-in",
+      "restApi": null,
+      "modelSupport": "A raster image tool and Figma Weave workflows",
+      "freeTier": "yes",
+      "repo": "figma/mcp-server-guide",
+      "note": "The linked repository is Figma's setup guide for the MCP server, not server code. Free tier is marked yes because the pricing page lists a free Starter plan.",
+      "quickstart": [
+        {
+          "label": "Install the Figma plugin for Claude Code, which Figma's remote server setup page recommends.",
+          "lang": "bash",
+          "code": "claude plugin install figma@claude-plugins-official"
+        },
+        {
+          "label": "Or add the remote server by hand, from the same page.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http figma https://mcp.figma.com/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": true,
+        "inAnthropicSDirectory": true,
+        "claudeWebAndDesktop": true,
+        "claudeCode": true,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": null,
+        "asksBeforeSpendingCredits": true,
+        "generatesOnAFreeVendorAccount": false
+      },
+      "live": {
+        "stars": 2078,
+        "lastPush": "2026-10-15T07:08:06Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-16"
+      }
+    },
+    {
+      "n": 5,
+      "name": "Adobe for Claude",
+      "tagline": "Best for generating and then fixing a photo in one chat",
+      "homepage": "https://www.adobe.com/adobe-connectors/adobe-for-claude.html",
+      "docs": "https://claude.com/marketplace/connectors/adobe-creativity",
+      "pricing": null,
+      "claudeConnection": "Directory connector, sign-in required",
+      "restApi": null,
+      "modelSupport": "Scene generation, plus photo and design edits",
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Free tier is marked yes because Adobe says many tools work without signing in. Adobe states no price for the connector, so no pricing link is listed.",
+      "quickstart": [
+        {
+          "label": "Connector URL from Anthropic's directory listing. Adobe's page says to add the Adobe plugin from Plugins in Claude, connect it on the Connectors tab, then type /adobe in a new conversation.",
+          "lang": "text",
+          "code": "https://adobe-creativity.adobe.io/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": null,
+        "inAnthropicSDirectory": true,
+        "claudeWebAndDesktop": true,
+        "claudeCode": true,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": true,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 6,
+      "name": "Hugging Face",
+      "tagline": "Best for trying open models through Gradio Spaces",
+      "homepage": "https://huggingface.co/",
+      "docs": "https://huggingface.co/docs/hub/agents-mcp",
+      "pricing": "https://huggingface.co/pricing",
+      "claudeConnection": "Directory connector, sign-in required",
+      "restApi": true,
+      "modelSupport": "Image tools from the Gradio Spaces you select",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "The REST API column refers to Hugging Face Inference Providers, which are documented apart from the MCP server.",
+      "quickstart": [
+        {
+          "label": "Open your MCP settings while logged in, pick your client and copy the snippet the page generates, from the Hugging Face MCP docs.",
+          "lang": "text",
+          "code": "https://huggingface.co/settings/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": null,
+        "inAnthropicSDirectory": true,
+        "claudeWebAndDesktop": true,
+        "claudeCode": null,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": true,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 7,
+      "name": "Higgsfield",
+      "tagline": "Best for creators who also want video models",
+      "homepage": "https://higgsfield.ai/",
+      "docs": "https://higgsfield.ai/mcp",
+      "pricing": "https://higgsfield.ai/pricing",
+      "claudeConnection": "Server URL from its MCP page",
+      "restApi": null,
+      "modelSupport": "Image and video generation",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Server URL from the Higgsfield MCP page. Follow the Claude or Claude Code tab on that page for the steps.",
+          "lang": "text",
+          "code": "https://mcp.higgsfield.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": null,
+        "inAnthropicSDirectory": false,
+        "claudeWebAndDesktop": true,
+        "claudeCode": true,
+        "accountSignInWithNoApiKey": null,
+        "imageShownInChat": null,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 8,
+      "name": "Canva",
+      "tagline": "Best for designs you will keep editing",
+      "homepage": "https://www.canva.com/",
+      "docs": "https://claude.com/marketplace/connectors/canva",
+      "pricing": "https://www.canva.com/pricing/",
+      "claudeConnection": "Directory connector, sign-in required",
+      "restApi": true,
+      "modelSupport": "Canva designs, generated and exported",
+      "freeTier": "yes",
+      "repo": null,
+      "note": "The REST API column refers to Canva's Connect APIs for developers, which Canva documents apart from the connector.",
+      "quickstart": [
+        {
+          "label": "Connector URL from Anthropic's directory listing. Add it from the directory in Claude.",
+          "lang": "text",
+          "code": "https://mcp.canva.com/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsASavedWorkflowInOneRequest": null,
+        "inAnthropicSDirectory": true,
+        "claudeWebAndDesktop": true,
+        "claudeCode": null,
+        "accountSignInWithNoApiKey": true,
+        "imageShownInChat": null,
+        "asksBeforeSpendingCredits": null,
+        "generatesOnAFreeVendorAccount": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
