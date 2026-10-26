@@ -16,7 +16,7 @@ The Wireflow team maintains this list, so read entry 1 with that in mind. [Wiref
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-19** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-26** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -50,9 +50,9 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | Claude connection | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | Custom connector by URL, OAuth sign-in | Yes | [check](https://www.wireflow.ai/pricing) | 100+ image, video and audio models as nodes | [pricing](https://www.wireflow.ai/pricing) | n/a |
-| **[Comfy Cloud](#2-comfy-cloud)** | Custom connector by URL, OAuth, API key fallback | Yes | [check](https://comfy.org/pricing/) | ComfyUI workflows, plus partner models such as Flux and Ideogram | [pricing](https://comfy.org/pricing/) | [Comfy-Org/comfy-skills](https://github.com/Comfy-Org/comfy-skills), 232 ★, pushed 2026-10-08 |
+| **[Comfy Cloud](#2-comfy-cloud)** | Custom connector by URL, OAuth, API key fallback | Yes | [check](https://comfy.org/pricing/) | ComfyUI workflows, plus partner models such as Flux and Ideogram | [pricing](https://comfy.org/pricing/) | [Comfy-Org/comfy-skills](https://github.com/Comfy-Org/comfy-skills), 236 ★, pushed 2026-10-23 |
 | **[Krea](#3-krea)** | Server URL, OAuth, API token fallback | Yes | Yes | Krea's image and video models, and node apps | [pricing](https://www.krea.ai/pricing) | n/a |
-| **[Figma](#4-figma)** | Directory connector, OAuth sign-in | n/a | Yes | A raster image tool and Figma Weave workflows | [pricing](https://www.figma.com/pricing) | [figma/mcp-server-guide](https://github.com/figma/mcp-server-guide), 2,089 ★, pushed 2026-10-19 |
+| **[Figma](#4-figma)** | Directory connector, OAuth sign-in | n/a | Yes | A raster image tool and Figma Weave workflows | [pricing](https://www.figma.com/pricing) | [figma/mcp-server-guide](https://github.com/figma/mcp-server-guide), 2,114 ★, pushed 2026-10-20 |
 | **[Adobe for Claude](#5-adobe-for-claude)** | Directory connector, sign-in required | n/a | Yes | Scene generation, plus photo and design edits | n/a | n/a |
 | **[Hugging Face](#6-hugging-face)** | Directory connector, sign-in required | Yes | [check](https://huggingface.co/pricing) | Image tools from the Gradio Spaces you select | [pricing](https://huggingface.co/pricing) | n/a |
 | **[Higgsfield](#7-higgsfield)** | Server URL from its MCP page | n/a | [check](https://higgsfield.ai/pricing) | Image and video generation | [pricing](https://higgsfield.ai/pricing) | n/a |
