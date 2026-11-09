@@ -1,7 +1,7 @@
 {
   "keyword": "claude image generation",
   "title": "Claude Image Generation via MCP: 8 Connectors Compared by App and Plan",
-  "lastChecked": "2026-11-02",
+  "lastChecked": "2026-11-09",
   "capabilityChecks": [
     {
       "key": "runsASavedWorkflowInOneRequest",
@@ -118,11 +118,11 @@
         "generatesOnAFreeVendorAccount": false
       },
       "live": {
-        "stars": 242,
+        "stars": 250,
         "lastPush": "2026-10-23T23:53:20Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -199,11 +199,11 @@
         "generatesOnAFreeVendorAccount": false
       },
       "live": {
-        "stars": 2144,
-        "lastPush": "2026-10-28T14:18:10Z",
+        "stars": 2166,
+        "lastPush": "2026-11-09T11:31:38Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
